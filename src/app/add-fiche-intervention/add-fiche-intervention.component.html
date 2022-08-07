@@ -1,0 +1,69 @@
+<mat-card class="card">
+    <mat-card-header>
+        <h1>Add New Fiche Intervention</h1>
+    </mat-card-header>
+    <div class="container">
+
+        <form (ngSubmit)="OnSubmit()">
+
+            <!-- 
+            <div class="form-group">
+                <label>Id </label>
+                <input type="number" class="form-control" id="Id" [(ngModel)]="ficheIntervention.id" name="id">
+            </div> -->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="form-group">
+                <label>prog </label>
+                <input type="text" class="form-control" id="prog" [(ngModel)]="ficheIntervention.prog" name="prog">
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Problem ActionImmediate</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.actionsRealisees" name="ActionImmediate"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">detailInvestigations</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.detailInvestigations" name="ActionImmediate"></textarea>
+            </div>
+
+            <!-- 
+            <div class="form-group">
+                <label>actionsRealisees </label>
+                <input type="text" class="form-control" id="actionsRealisees" [(ngModel)]="ficheIntervention.actionsRealisees" name="actionsRealisees">
+            </div> -->
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">statutResolution</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.statutResolution" name="ActionImmediate"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Consequences Incident</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.consequencesIncident" name="ActionImmediate"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">constats</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.constats" name="ActionImmediate"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">dureeIncident</label>
+                <input type="time" class="form-control" [(ngModel)]="ficheIntervention.dureeIncident" name="ActionImmediate">
+
+            </div>
+
+
+
+
+
+            <br>
+            <button type="submit" class="btn btn-primary">Save User</button>
+        </form>
+    </div>
+</mat-card>

@@ -1,0 +1,35 @@
+<mat-card class="card">
+    <cdk-accordion class="example-accordion">
+        <cdk-accordion-item *ngFor="let ficheIntervention of ficheInterventions; let index = index;" #accordionItem="cdkAccordionItem" class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
+            [attr.aria-controls]="'accordion-body-' + index">
+            <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                <h4>{{ficheIntervention.prog}}</h4>
+                <span class="example-accordion-item-description">
+         {{ accordionItem.expanded ? 'close' : 'mor' }}
+      </span>
+            </div>
+            <div class="example-accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
+
+
+                <span><h2>PROG</h2></span>
+                <p>{{ficheIntervention.prog}}</p>
+                <span><h2>Constats</h2></span>
+                <p>{{ficheIntervention.constats}}</p>
+                <span><h2>actionsRealisees</h2></span>
+                <p>{{ficheIntervention.actionsRealisees }}</p>
+                <span><h2>detailInvestigations</h2></span>
+                <p>{{ficheIntervention.constats}}</p>
+                <span> <h2>causeIncident</h2></span>
+                <p>{{ficheIntervention.causeIncident}}</p>
+                <span> <h2> consequencesIncident</h2></span>
+                <p>{{ficheIntervention.consequencesIncident}}</p>
+                <span> <h2>dureeIncident</h2></span>
+                <p>{{ficheIntervention.dureeIncident}}</p>
+                <span> <h2>statutResolution</h2></span>
+                <p>{{ficheIntervention.statutResolution}}</p>
+                <button (click)="updateFicheIntervention(ficheIntervention.id) " class="btn btn-info ">Update</button>
+
+            </div>
+        </cdk-accordion-item>
+    </cdk-accordion>
+</mat-card>

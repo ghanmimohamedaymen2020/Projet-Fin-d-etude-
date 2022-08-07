@@ -1,0 +1,63 @@
+     /* .card {
+         opacity: 0.9;
+     }
+     
+     .table-striped {
+         border-spacing: 5 px 5 rem;
+     }
+     
+     .test {
+         border: 3 px;
+         width: 5;
+         ;
+     } */
+     /* 
+table table-striped {
+    width: 100%;
+} */
+     /* Structure */
+     /* .container {
+         position: relative;
+     }
+     
+     .table-container {
+         position: relative;
+         min-height: 200px;
+         max-height: 400px;
+         overflow: auto;
+     }
+     
+     table {
+         width: 100%;
+     }
+     
+     .loading-shade {
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 56px;
+         right: 0;
+         background: rgba(0, 0, 0, 0.15);
+         z-index: 1;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     
+     .rate-limit-reached {
+         max-width: 360px;
+         text-align: center;
+     } */
+     /* Column Widths */
+     /* .mat-column-number,
+     .mat-column-state {
+         max-width: 64px;
+     }
+     
+     .mat-column-created {
+         max-width: 124px;
+     } */
+     
+     table {
+         width: 100%;
+     }

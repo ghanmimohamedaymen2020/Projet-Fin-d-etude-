@@ -1,0 +1,37 @@
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="ListTFJList">
+
+        <ng-container matColumnDef="DCO">
+            <th mat-header-cell *matHeaderCellDef> DCO </th>
+            <td mat-cell *matCellDef="let element"> {{element.DCO}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dco">
+            <th mat-header-cell *matHeaderCellDef> dco </th>
+            <td mat-cell *matCellDef="let element"> {{element.dco}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="nmvt">
+            <th mat-header-cell *matHeaderCellDef> nmvt </th>
+            <td mat-cell *matCellDef="let element"> {{element.nmvt}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="t_HI">
+            <th mat-header-cell *matHeaderCellDef> t_HI </th>
+            <td mat-cell *matCellDef="let element"> {{element.t_HI}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="t_TOT">
+            <th mat-header-cell *matHeaderCellDef> t_TOT </th>
+            <td mat-cell *matCellDef="let element"> {{element.t_TOT}} </td>
+        </ng-container>
+
+
+
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

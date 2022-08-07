@@ -1,0 +1,5 @@
+.card {
+    opacity: 0.5;
+    background-color: #ffffff;
+    color: hwb(0 0% 100%);
+}

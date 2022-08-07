@@ -1,0 +1,9 @@
+.containere {
+    position: relative;
+    background-image: url('../assets/Attijari.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+}
